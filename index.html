@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+
+    <body>
+        <header> 
+            <div id="banner" class="hidden">
+                  <img class="done"src="https://icon-library.net//images/small-check-mark-icon/small-check-mark-icon-5.jpg"/>
+                    <span>Thank you for contacting us, <span id="bannerName"></span>
+                  <span class="exitSymbol">&#x2716;</span>
+              </div>
+        </header>
+   
+        <div class="container">
+            <div class="Contact">
+                 <form onsubmit="return false">
+                    <!-- <label for="FirstName">
+                        <input class="FirstName" label="FirstName" type="text" placeholder="First Name" title="No numbers allowed" pattern="[A-Za-z]+" required>
+                    </label>
+                    
+                    <label for="SecondName">
+                        <input class="SecondName" label="SecondName" type="text" placeholder="Second Name" title="No numbers allowed" pattern="[A-Za-z]+" required>
+                    </label> -->
+                    <label for="FirstName">
+                        <input id="FirstName" class="FirstName" label="FirstName" type="text" placeholder="First Name" required>
+                    </label>
+                    
+                    <label for="SecondName">
+                        <input id="SecondName" class="SecondName" label="SecondName" type="text" placeholder="Second Name" required>
+                    </label>
+
+                    <h7>Gender</h7>
+
+                    <label for="male" class="gender">
+                        <input type="radio" name="gender" value="male" checked>
+                        <span>M</span>
+
+                    </label>
+
+                    <label for="female" class="gender">
+                        <input type="radio" name="gender" value="female" />
+                        <span>F</span>
+                    </label>
+
+                    <textarea id= comments name="Comments" placeholder="Your message here..."></textarea>
+
+                    <label for="button" class="button">
+                        <button class="submit "type="submit" onclick=" return inputValidation()" >Submit</button>
+                    </label>
+                </form>
+            </div>
+            <div class="sidebar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyFLKW6syvVqe3issqJ_Uu84kuNMrINvH6it5ebwylvQtSI8qh">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
